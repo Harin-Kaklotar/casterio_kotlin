@@ -1,12 +1,9 @@
 package main
 
 fun main(){
-    var harin = User("Harin", "Kaklotar")
-    println(harin.fullName)
-
-    harin.fullName = "Android"
-    println(harin.fullName)
-
-    harin.fullName = "Hello world"
-    println(harin.fullName)
+    var user = User.createUser("Foo", "Bar")
+    println(user)
+    var users1 = User.createUsers(5)
+    var user2 = User.users
+    user2.forEach { println(it) }
 }
