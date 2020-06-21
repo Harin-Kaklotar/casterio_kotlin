@@ -1,13 +1,17 @@
 package main
 
-class User (var firstName: String, var lastName: String, val isPremium: Boolean){
-
-    constructor(firstName: String, lastName: String): this(firstName, lastName, false){
-        println("isPlatinum default false")
-    }
+class User (var firstName: String, var lastName: String){
 
     constructor(firstName: String): this(firstName, "Unknown"){
-        println("3rd constructor")
+        println("secondory constructor")
+    }
+
+    init {
+        println("This is 1st init block, It will call after primary constructor")
+    }
+
+    init {
+        println("This is 2nd init block")
     }
 
     fun printFullName(){
