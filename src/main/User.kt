@@ -2,16 +2,15 @@ package main
 
 class User (var firstName: String, var lastName: String){
 
-    constructor(firstName: String): this(firstName, "Unknown"){
-        println("secondory constructor")
-    }
+
+    var fullName = "$firstName $lastName"
+
+    var age: Int = 12
+    val fullNameLength = fullName.length
+
 
     init {
-        println("This is 1st init block, It will call after primary constructor")
-    }
-
-    init {
-        println("This is 2nd init block")
+        println("This is 1st init block")
     }
 
     fun printFullName(){
