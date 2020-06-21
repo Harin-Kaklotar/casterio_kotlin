@@ -1,8 +1,6 @@
 package main
 
-class User{
-    var firstName: String = ""
-    var lastName: String = ""
+class User constructor(var firstName: String, var lastName: String){
 
     fun printFullName(){
         println("$firstName $lastName")

@@ -1,17 +1,13 @@
 package main
 
 fun main(){
-    var harin = User()
-    harin.firstName = "Harin"
-    harin.lastName = "Kaklotar"
+    var harin = User("Harin", "Kaklotar")
     harin.printFullName()
     harin.printPrifix("Mr.")
     harin.changeName("Harit")
     harin.printFullName()
 
-    var friend = User()
-    friend.firstName = "Donald"
-    friend.lastName = "Duck"
+    var friend = User("Donald", "Duck")
     friend.printFullName()
     friend.firstNameLength()
 }
